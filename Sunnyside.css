@@ -45,11 +45,9 @@ header {
     position: relative;
     top: 60px;
     margin-left: 84.9%;
-    /* right: -331px; */
     width: 0;
     height: 0;
     border-left: 40px solid transparent;
-    /* border-right: 100px solid transparent; */
     border-bottom: 40px solid hsl(0, 100%, 100%);
 }
 
@@ -400,13 +398,6 @@ footer h1 {
     width: 50%;
 }
 
-/* .icons-child {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 50%;
-} */
-
 .icons-child img:hover {
     background-color: hsl(0, 100%, 100%);
 }
@@ -434,7 +425,6 @@ footer h1 {
     display: none;
     position: relative;
     top: 60px;
-    /* right: -318px; */
     margin-left: 84.9%;
 }
 
@@ -520,11 +510,9 @@ nav {
     top: -8px;
     background-color: hsla(0, 100%, 100%, 0);
     font-family: 'Barlow', sans-serif;
-    /* margin-left: 20px; */
     height: 30px;
     width: 90%;
     padding: 40px 0;
-    /* text-align: center; */
 }
 
 nav ul {
@@ -564,10 +552,6 @@ nav a {
     color: hsl(0, 100%, 100%);
 }
 
-/* nav button:hover {
-    background-color: hsl(198, 62%, 26%);
-} */
-
 .first-sect {
     display: flex;
     flex-direction: row-reverse;
@@ -582,7 +566,6 @@ nav a {
 }
 
 .Transform-sect h1 {
-    /* margin-left: -33px; */
     padding: 0 203px;
     text-align: left;
 }
@@ -666,11 +649,6 @@ nav a {
     width: 700px;
 }
 
-/* .Graphic-sect h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-} */
-
 .Graphic-sect p {
     padding: 20px 130px;
     margin-left: 5px;
@@ -689,11 +667,6 @@ nav a {
     text-align: center;
     width: 700px;
 }
-
-/* .Photography-sect h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 900;   
-} */
 
 .Photography-sect p {
     font-family: 'Barlow', sans-serif;
@@ -735,10 +708,6 @@ nav a {
     top: 350px;
     display: flex;   
 }
-
-/* .fifth-container {
-    display: flex;
-} */
 
 .fifth-sect img {
     width: 100%;
@@ -794,13 +763,6 @@ footer h1 {
     list-style: none;
     width: 15%;
 }
-
-/* .icons-child {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 50%;
-} */
 
 .icons-child img:hover {
     background-color: hsl(0, 100%, 100%);
