@@ -1,0 +1,814 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 100%, 100%);
+    font-family: 'Barlow', 'Fraunces', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+header {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 35rem;
+}
+
+.logo {
+    position: relative;
+    top: 40px;
+    margin-left: 15px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down img {
+    position: absolute;
+    top: 300px;
+}
+
+.clip {
+    display: none;
+    position: relative;
+    top: 60px;
+    margin-left: 84.9%;
+    /* right: -331px; */
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    /* border-right: 100px solid transparent; */
+    border-bottom: 40px solid hsl(0, 100%, 100%);
+}
+
+.clip.active {
+    display: block;
+}
+
+nav {
+    display: none;
+    position: relative;
+    top: 60px;
+    background-color: hsl(0, 100%, 100%);
+    font-family: 'Barlow', sans-serif;
+    margin-left: 20px;
+    height: 19rem;
+    width: 90%;
+    padding: 40px 0;
+    text-align: center;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding-bottom: 40px;
+}
+
+nav a {
+    color: hsl(213, 9%, 39%);
+    text-decoration: none;
+}
+
+.navBtn {
+    background-color: hsl(51, 100%, 48%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    height: 55px;
+    width: 150px;
+    padding: 18px 0;
+    text-transform: uppercase;
+}
+
+nav.active {
+    display: block;
+}
+
+header h1 {
+    position: absolute;
+    top: 10rem;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 7px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.image-transform img {
+    width: 100%;
+}
+
+.Transform-sect {
+    position: relative;
+    top: 40px;
+}
+
+.Transform-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 0 45px;
+    text-align: center;
+}
+
+.Transform-sect p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 2rem;
+    text-align: center;
+}
+
+.Btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Transform-sect button {
+    background-color: hsl(0, 100%, 100%);
+    border: none;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: 3px solid hsla(51, 100%, 49%, 0.5) underline;
+    text-transform: uppercase;
+}
+
+.second-sect {
+    position: relative;
+    top: 90px;
+}
+
+.image-stand-out img {
+    width: 100%;
+}
+
+.Stand-sect {
+    position: relative;
+    top: 80px;
+}
+
+.second-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.second-sect p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 30px; 
+    text-align: center;
+}
+
+.second-sect button {
+    background-color: hsl(0, 100%, 100%);
+    border: none;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: 3px solid hsla(7, 99%, 70%, 0.5) underline;
+    text-transform: uppercase;
+}
+
+.third-sect {
+    position: relative;
+    top: 230px;
+}
+
+.image-graphic-design img {
+    width: 100%;
+}
+
+.Graphic-sect {
+    position: absolute;
+    top: 380px;
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+}
+
+.Graphic-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.Graphic-sect p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 5px;
+}
+
+.image-photography {
+    position: relative;
+    top: -5px;
+}
+
+.image-photography img {
+    width: 100%;
+}
+
+.Photography-sect {
+    position: absolute;
+    top: 380px;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+}
+
+.Photography-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;   
+}
+
+.Photography-sect p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 5px;
+}
+
+.fourth-sect {
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+.fourth-sect h3 {
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.fourth-sect img {
+    border-radius: 100px;
+    height: 100px;
+}
+
+.Emily {
+    margin-top: 60px;
+    padding: 20px 0;
+}
+
+.Emily p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+    padding: 30px 30px;
+}
+
+.Emily h2 {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.Emily span {   
+    color: hsl(210, 4%, 67%);
+}
+
+.Thomas {
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.Thomas p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+    padding: 30px 30px;
+}
+
+.Thomas h2 {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.Thomas span {   
+    color: hsl(210, 4%, 67%);
+}
+
+.Jennie {
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.Jennie p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
+    padding: 30px 30px;
+}
+
+.Jennie h2 {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.Jennie span {   
+    color: hsl(210, 4%, 67%);
+}
+
+.fifth-sect {
+    position: relative;
+    top: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fifth-sect img {
+    width: 100%;
+    margin-top: -5px;
+}
+
+footer {
+    position: relative;
+    top: 340px;
+    background-color: hsla(167, 34%, 41%, 0.5);
+}
+
+footer h1 {
+    color: hsl(167, 34%, 41%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-continer {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 90%;
+}
+
+.contact a {
+    color: hsl(167, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: hsl(0, 100%, 100%);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+}
+
+/* .icons-child {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+} */
+
+.icons-child img:hover {
+    background-color: hsl(0, 100%, 100%);
+}
+
+.attribution {
+    position: relative;
+    top: 300px;
+}
+
+@media screen and (max-width: 375px) {
+
+.logo {
+    position: relative;
+    top: 40px;
+    margin-left: 20px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.clip {
+    display: none;
+    position: relative;
+    top: 60px;
+    /* right: -318px; */
+    margin-left: 84.9%;
+}
+
+.image-transform img {
+    width: 100%;
+    margin-top: -22px;
+}
+
+.Transform-sect h1 {
+    padding: 0 35px;
+}
+
+.Transform-sect p {
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 1.4rem;
+    text-align: center;
+}
+
+.second-sect h1 {
+    padding: 0 20px;
+}
+
+.Graphic-sect p {
+    padding: 20px 2px;
+}
+
+.Photography-sect p {
+    padding: 20px 0;
+}
+
+.Thomas p {
+    padding: 30px 25px;
+}
+
+
+.Jennie p {
+    padding: 30px 20px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+header {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50rem;
+}
+
+.headerWe {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    top: 40px;
+    margin-left: 60px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down img {
+    position: relative;
+    top: 170px;
+    height: 200px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -8px;
+    background-color: hsla(0, 100%, 100%, 0);
+    font-family: 'Barlow', sans-serif;
+    /* margin-left: 20px; */
+    height: 30px;
+    width: 90%;
+    padding: 40px 0;
+    /* text-align: center; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav li {
+    padding-bottom: 0;
+}
+
+nav a {
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+}
+
+.navBtn  {
+    background-color: hsl(0, 100%, 100%);
+    height: 40px;
+    width: 130px;
+    padding: 5px 0;
+    margin-top: -8px;
+}
+
+.navBtn a {
+    color: hsl(212, 27%, 19%);
+}
+
+.navBtn:hover {
+    background-color: hsla(210, 4%, 67%, 0);
+    cursor: pointer;
+}
+
+.navBtn a:hover {
+    color: hsl(0, 100%, 100%);
+}
+
+/* nav button:hover {
+    background-color: hsl(198, 62%, 26%);
+} */
+
+.first-sect {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.Transform-sect {
+    position: relative;
+    top: 120px;
+    right: 173px;
+    width: 700px;
+}
+
+.Transform-sect h1 {
+    /* margin-left: -33px; */
+    padding: 0 203px;
+    text-align: left;
+}
+
+.Transform-sect p {
+    padding: 20px 47px;
+    margin-left: 158px;
+    text-align: left;
+}
+
+.Btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Transform-sect button {
+    margin-left: -165px;
+}
+
+.Transform-sect button:hover {
+    cursor: pointer;
+    text-decoration: 4px solid hsl(51, 100%, 49%) underline;
+}
+
+.second-sect {
+    position: relative;
+    top: -5px;
+    display: flex;
+}
+
+
+.Stand-sect {
+    position: relative;
+    top: 130px;
+    width: 700px;
+}
+
+.second-sect h1 {
+    padding: 0 90px;
+    text-align: left;
+}
+
+.second-sect p {
+    padding: 20px 152px;
+    margin-left: -60px; 
+    text-align: left;
+}
+
+.second-sect button {
+    margin-left: -390px;
+}
+
+.second-sect button {
+    background-color: hsl(0, 100%, 100%);
+    border: none;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: 3px solid hsla(7, 99%, 70%, 0.5) underline;
+    text-transform: uppercase;
+}
+
+.second-sect button:hover {
+    cursor: pointer;
+    text-decoration: 4px solid hsl(7, 99%, 70%) underline;
+}
+
+.third-sect {
+    position: relative;
+    top: -9px;
+    display: flex;
+}
+
+
+.Graphic-sect {
+    position: absolute;
+    top: 380px;
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+    width: 700px;
+}
+
+/* .Graphic-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+} */
+
+.Graphic-sect p {
+    padding: 20px 130px;
+    margin-left: 5px;
+}
+
+.image-photography {
+    position: relative;
+    top: 0;
+}
+
+
+.Photography-sect {
+    position: absolute;
+    top: 380px;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+    width: 700px;
+}
+
+/* .Photography-sect h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;   
+} */
+
+.Photography-sect p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding: 20px 143px;
+    margin-left: -10px;
+}
+
+.fourth-sect {
+    position: relative;
+    top: 120px;
+    text-align: center;
+}
+
+.fourth-container {
+    display: flex;
+}
+
+.fourth-sect img {
+    border-radius: 100px;
+    height: 80px;
+}
+
+.Emily p {
+    padding: 30px 59px;
+}
+
+.Thomas p {
+    padding: 30px 83px;
+}
+
+.Jennie p {
+    padding: 30px 34px;
+}
+
+.fifth-sect {
+    position: relative;
+    top: 350px;
+    display: flex;   
+}
+
+/* .fifth-container {
+    display: flex;
+} */
+
+.fifth-sect img {
+    width: 100%;
+    margin-top: -5px;
+}
+
+footer {
+    position: relative;
+    top: 340px;
+    background-color: hsla(167, 34%, 41%, 0.5);
+}
+
+footer h1 {
+    color: hsl(167, 34%, 41%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-continer {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 30%;
+}
+
+.contact a {
+    color: hsl(167, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: hsl(0, 100%, 100%);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 15%;
+}
+
+/* .icons-child {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+} */
+
+.icons-child img:hover {
+    background-color: hsl(0, 100%, 100%);
+}
+
+.attribution {
+    position: relative;
+    top: 300px;
+}
+
+}
