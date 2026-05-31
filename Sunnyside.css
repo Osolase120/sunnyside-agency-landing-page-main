@@ -341,6 +341,7 @@ header h1 {
     top: 350px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
 }
 
 .fifth-sect img {
